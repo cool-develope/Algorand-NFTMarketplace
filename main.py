@@ -15,12 +15,18 @@ token2 = {
     "unit_name": "Garlic",
     "asset_name": "authentium_nft_4",
     "description": "sell offer of garlic",
-    "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2019%2F07%2Fgettyimages-513038872-2000.jpg&q=85"
+    "url": "https://image.shutterstock.com/image-photo/garlic-cloves-bulb-vintage-wooden-260nw-552242461.jpg"
 }
 
 token_id1 = market.register(1, token1)
 token_id2 = market.register(2, token2)
 
+print("2 tokens created!")
+
 market.sell_offer(1, token_id1, 1000000)
 
+print("sell offer")
+
 market.buy_offer(3, token_id1)
+
+print("buy offer")
